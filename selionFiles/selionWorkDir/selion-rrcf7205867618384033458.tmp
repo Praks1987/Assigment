@@ -1,0 +1,24 @@
+{
+  "type": "BeforeMethod",
+  "suite": "TestSuite",
+  "test": "ChromeTest",
+  "packageInfo": "com.ril.deliveryApp.ws",
+  "className": "Grid",
+  "methodName": "setUp",
+  "status": "Passed",
+  "startTime": "2019-02-14T12:20:26.026+05:30",
+  "endTime": "2019-02-14T12:20:50.170+05:30",
+  "description": ""
+},
+{
+  "type": "AfterMethod",
+  "suite": "TestSuite",
+  "test": "ChromeTest",
+  "packageInfo": "com.ril.deliveryApp.ws",
+  "className": "Grid",
+  "methodName": "tearDown",
+  "status": "Passed",
+  "startTime": "2019-02-14T12:20:56.844+05:30",
+  "endTime": "2019-02-14T12:20:57.267+05:30",
+  "description": ""
+},

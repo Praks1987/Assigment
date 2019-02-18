@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Test Suit]" parallel="classes">
+  <test thread-count="5" name="ChromeTest(failed)" parallel="classes">
+    <parameter name="browser" value="Chrome"/>
+    <classes>
+      <class name="com.mapsnq.assignment.DirectionModule">
+        <methods>
+          <include name="TestToFatestDirection"/>
+          <include name="TestToShotestDirection"/>
+          <include name="TestToCheckOnlyByGivingFromDirection"/>
+          <include name="TestToCheckOnlyByGivingToDirection"/>
+          <include name="tearDown"/>
+          <include name="TestClearRouteLink"/>
+          <include name="TestToCheckSwapOriginAndDestination"/>
+          <include name="setUp"/>
+          <include name="TestToClickOnlyDirectionButton"/>
+          <include name="DirectionFromAndToPlace"/>
+        </methods>
+      </class> <!-- com.mapsnq.assignment.DirectionModule -->
+      <class name="com.mapsnq.assignment.SearchModule">
+        <methods>
+          <include name="SearchLocationWithValidData"/>
+          <include name="tearDown"/>
+          <include name="SearchLocationWithEmptyData"/>
+          <include name="SearchSuggestionWithMinimumLenght"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.mapsnq.assignment.SearchModule -->
+      <class name="com.mapsnq.assignment.LiveTrafficeModule">
+        <methods>
+          <include name="TestToCheckListOfLiveTollPage"/>
+          <include name="tearDown"/>
+          <include name="TestToCheckListOfLiveCamerasPage"/>
+          <include name="TestToCheckUserNavigateToLiveTollPage"/>
+          <include name="TestToUserSeeListOfLiveIncidentPage"/>
+          <include name="TestToUserSeeLiveCamerasPage"/>
+          <include name="setUp"/>
+          <include name="TestToUserNativgateToLiveIncidentPage"/>
+        </methods>
+      </class> <!-- com.mapsnq.assignment.LiveTrafficeModule -->
+    </classes>
+  </test> <!-- ChromeTest(failed) -->
+  <test thread-count="5" name="FirefoxTest(failed)" parallel="classes">
+    <parameter name="browser" value="Firefox"/>
+    <classes>
+      <class name="com.mapsnq.assignment.DirectionModule">
+        <methods>
+          <include name="TestToFatestDirection"/>
+          <include name="TestToShotestDirection"/>
+          <include name="TestToCheckOnlyByGivingFromDirection"/>
+          <include name="TestToCheckOnlyByGivingToDirection"/>
+          <include name="tearDown"/>
+          <include name="TestClearRouteLink"/>
+          <include name="TestToCheckSwapOriginAndDestination"/>
+          <include name="setUp"/>
+          <include name="TestToClickOnlyDirectionButton"/>
+          <include name="DirectionFromAndToPlace"/>
+        </methods>
+      </class> <!-- com.mapsnq.assignment.DirectionModule -->
+      <class name="com.mapsnq.assignment.SearchModule">
+        <methods>
+          <include name="SearchLocationWithAutosuggestion"/>
+          <include name="SearchLocationWithValidData"/>
+          <include name="tearDown"/>
+          <include name="SearchLocationWithEmptyData"/>
+          <include name="SearchSuggestionWithMinimumLenght"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.mapsnq.assignment.SearchModule -->
+      <class name="com.mapsnq.assignment.LiveTrafficeModule">
+        <methods>
+          <include name="TestToCheckListOfLiveTollPage"/>
+          <include name="tearDown"/>
+          <include name="TestToCheckListOfLiveCamerasPage"/>
+          <include name="TestToCheckUserNavigateToLiveTollPage"/>
+          <include name="TestToUserSeeListOfLiveIncidentPage"/>
+          <include name="TestToUserSeeLiveCamerasPage"/>
+          <include name="setUp"/>
+          <include name="TestToUserNativgateToLiveIncidentPage"/>
+        </methods>
+      </class> <!-- com.mapsnq.assignment.LiveTrafficeModule -->
+    </classes>
+  </test> <!-- FirefoxTest(failed) -->
+</suite> <!-- Failed suite [Test Suit] -->

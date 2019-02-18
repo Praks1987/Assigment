@@ -1,0 +1,146 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.mapsnq.assignment</groupId>
+  <artifactId>Test</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <name>Test</name>
+  
+  <url>http://maven.apache.org</url>
+
+	<properties>
+		<selion.version>1.2.0</selion.version>
+	</properties>
+
+	<!-- Optional, required when you want to use a SeLion SNAPSHOT version -->
+	<repositories>
+		<repository>
+			<id>sonatype-nexus-snapshots</id>
+			<url>https://oss.sonatype.org/content/repositories/snapshots</url>
+		</repository>
+	</repositories>
+
+	<!-- Optional, required when you want to use a SeLion maven plugin SNAPSHOT 
+		version -->
+	<pluginRepositories>
+		<pluginRepository>
+			<id>sonatype-nexus-snapshots</id>
+			<url>https://oss.sonatype.org/content/repositories/snapshots</url>
+		</pluginRepository>
+	</pluginRepositories>
+
+	<dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>com.paypal.selion</groupId>
+				<artifactId>SeLion-Project-BOM</artifactId>
+				<version>${selion.version}</version>
+				<type>pom</type>
+				<scope>import</scope>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
+
+	<dependencies>
+		<dependency>
+			<groupId>com.paypal.selion</groupId>
+			<artifactId>SeLion</artifactId>
+			<version>${selion.version}</version>
+		</dependency>
+
+	<!-- 	Required only for local runs -->
+		<dependency>
+			<groupId>com.paypal.selion</groupId>
+			<artifactId>SeLion-Grid</artifactId>
+			<version>${selion.version}</version>
+		</dependency>
+
+	<!-- 	Required only for local runs -->
+		<dependency>
+			<groupId>org.seleniumhq.selenium</groupId>
+			<artifactId>selenium-server</artifactId>
+		<version>2.53.1</version> 	
+		</dependency>
+		
+		<dependency> 
+			<groupId>org.testng</groupId>
+			<artifactId>testng</artifactId>
+			<version>6.10</version>
+		</dependency> 
+
+		<dependency>
+			<groupId>org.apache.xmlrpc</groupId>
+			<artifactId>xmlrpc-client</artifactId>
+			<version>3.1.3</version>
+		</dependency>
+
+       <dependency>
+		    <groupId>com.relevantcodes</groupId>
+		    <artifactId>extentreports</artifactId>
+		    <version>2.41.0</version>
+        </dependency>
+		<dependency>
+			<groupId>org.apache.xmlrpc</groupId>
+			<artifactId>xmlrpc-common</artifactId>
+			<version>3.1</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.ws.commons</groupId>
+			<artifactId>ws-commons-util</artifactId>
+			<version>1.0.1</version>
+		</dependency>
+		
+        <dependency>   
+            <groupId>org.seleniumhq.selenium</groupId>   
+            <artifactId>selenium-chrome-driver</artifactId>   
+            <version>2.53.0</version>   
+        </dependency>   
+         <dependency>   
+            <groupId>io.github.bonigarcia</groupId>    
+            <artifactId>webdrivermanager</artifactId>   
+            <version>1.4.5</version>    
+        </dependency>  
+
+		<dependency>
+			<groupId>org.jboss.resteasy</groupId>
+			<artifactId>resteasy-client</artifactId>
+			<version>3.0.18.Final</version>
+		</dependency>
+
+	<dependency>
+		<groupId>org.jboss.resteasy</groupId>
+		<artifactId>resteasy-multipart-provider</artifactId>
+		<version>3.0.18.Final</version>
+	</dependency>
+
+		<dependency>
+			<groupId>org.mongodb</groupId>
+			<artifactId>mongo-java-driver</artifactId>
+			<version>2.13.0</version>
+		</dependency>
+		
+		<dependency>
+           <groupId>com.jayway.restassured</groupId>
+           <artifactId>rest-assured</artifactId>
+           <version>2.9.0</version>
+       </dependency> 
+
+	</dependencies>
+
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<version>2.17</version>
+				<configuration>
+					<!-- <forkMode>never</forkMode> -->
+					<suiteXmlFiles>
+						<suiteXmlFile>src\test\resources\Suites\TestNGSuit.xml</suiteXmlFile>
+					</suiteXmlFiles>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+</project>

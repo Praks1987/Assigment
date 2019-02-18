@@ -1,0 +1,12 @@
+{
+  "type": "BeforeMethod",
+  "suite": "TestSuite",
+  "test": "ChromeTest",
+  "packageInfo": "com.ril.deliveryApp.ws",
+  "className": "Grid",
+  "methodName": "setUp",
+  "status": "Passed",
+  "startTime": "2019-02-13T19:32:26.688+05:30",
+  "endTime": "2019-02-13T19:32:47.722+05:30",
+  "description": ""
+},

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" guice-stage="DEVELOPMENT" name="Failed suite [All]">
+  <test thread-count="2" name="FirefoxTest(failed)">
+    <parameter name="browser" value="Firefox"/>
+    <classes>
+      <class name="com.ril.deliveryApp.ws.Grid">
+        <methods>
+          <include name="SearchLocationWithValidData"/>
+          <include name="setUp"/>
+          <include name="SearchLocationWithAutosuggestion"/>
+          <include name="SearchSuggestionWithMinimumLenght"/>
+          <include name="tearDown"/>
+          <include name="SearchLocationWithEmptyData"/>
+        </methods>
+      </class> <!-- com.ril.deliveryApp.ws.Grid -->
+    </classes>
+  </test> <!-- FirefoxTest(failed) -->
+</suite> <!-- Failed suite [All] -->

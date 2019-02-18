@@ -1,0 +1,24 @@
+{
+  "type": "BeforeMethod",
+  "suite": "Test Suit",
+  "test": "ChromeTest",
+  "packageInfo": "com.mapsnq.assignment",
+  "className": "DirectionModule",
+  "methodName": "setUp",
+  "status": "Passed",
+  "startTime": "2019-02-17T13:42:11.982+05:30",
+  "endTime": "2019-02-17T13:42:32.907+05:30",
+  "description": ""
+},
+{
+  "type": "AfterMethod",
+  "suite": "Test Suit",
+  "test": "ChromeTest",
+  "packageInfo": "com.mapsnq.assignment",
+  "className": "DirectionModule",
+  "methodName": "tearDown",
+  "status": "Passed",
+  "startTime": "2019-02-17T13:43:02.516+05:30",
+  "endTime": "2019-02-17T13:43:27.159+05:30",
+  "description": ""
+},

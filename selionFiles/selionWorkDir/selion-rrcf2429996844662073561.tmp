@@ -1,0 +1,12 @@
+{
+  "type": "BeforeMethod",
+  "suite": "Test Suit",
+  "test": "ChromeTest",
+  "packageInfo": "com.ril.deliveryApp.ws",
+  "className": "DirectionModule",
+  "methodName": "setUp",
+  "status": "Passed",
+  "startTime": "2019-02-16T21:33:13.276+05:30",
+  "endTime": "2019-02-16T21:33:45.161+05:30",
+  "description": ""
+},

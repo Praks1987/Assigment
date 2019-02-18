@@ -1,0 +1,36 @@
+{
+  "type": "BeforeMethod",
+  "suite": "TestSuite",
+  "test": "ChromeTest",
+  "packageInfo": "com.ril.deliveryApp.ws",
+  "className": "Grid",
+  "methodName": "setUp",
+  "status": "Passed",
+  "startTime": "2019-02-13T15:43:20.405+05:30",
+  "endTime": "2019-02-13T15:43:43.827+05:30",
+  "description": ""
+},
+{
+  "type": "AfterMethod",
+  "suite": "TestSuite",
+  "test": "ChromeTest",
+  "packageInfo": "com.ril.deliveryApp.ws",
+  "className": "Grid",
+  "methodName": "tearDown",
+  "status": "Passed",
+  "startTime": "2019-02-13T15:44:43.902+05:30",
+  "endTime": "2019-02-13T15:44:44.220+05:30",
+  "description": ""
+},
+{
+  "type": "BeforeMethod",
+  "suite": "TestSuite",
+  "test": "FirefoxTest",
+  "packageInfo": "com.ril.deliveryApp.ws",
+  "className": "Grid",
+  "methodName": "setUp",
+  "status": "Passed",
+  "startTime": "2019-02-13T15:44:55.051+05:30",
+  "endTime": "2019-02-13T15:44:55.052+05:30",
+  "description": ""
+},

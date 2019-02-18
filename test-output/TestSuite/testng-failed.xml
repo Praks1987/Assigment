@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" guice-stage="DEVELOPMENT" name="Failed suite [TestSuite]">
+  <test thread-count="2" name="ChromeTest(failed)">
+    <parameter name="browser" value="Chrome"/>
+    <classes>
+      <class name="com.ril.deliveryApp.ws.DirectionModule">
+        <methods>
+          <include name="setUp"/>
+          <include name="DirectionFromAndToPlace"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.ril.deliveryApp.ws.DirectionModule -->
+    </classes>
+  </test> <!-- ChromeTest(failed) -->
+</suite> <!-- Failed suite [TestSuite] -->

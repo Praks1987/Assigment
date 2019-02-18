@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Test Suit]">
+  <test name="ChromeTest(failed)">
+    <parameter name="browser" value="Chrome"/>
+    <classes>
+      <class name="com.mapsnq.assignment.ws.DirectionModule">
+        <methods>
+          <include name="TestToCheckSwapOriginAndDestination"/>
+          <include name="TestToClickOnlyDirectionButton"/>
+          <include name="tearDown"/>
+          <include name="TestToTollAwareDirection"/>
+          <include name="TestToCheckOnlyByGivingToDirection"/>
+          <include name="TestToFatestDirection"/>
+          <include name="setUp"/>
+          <include name="TestToCheckOnlyByGivingFromDirection"/>
+        </methods>
+      </class> <!-- com.mapsnq.assignment.ws.DirectionModule -->
+    </classes>
+  </test> <!-- ChromeTest(failed) -->
+</suite> <!-- Failed suite [Test Suit] -->

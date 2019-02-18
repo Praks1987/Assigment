@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="20" guice-stage="DEVELOPMENT" name="Failed suite [Grocery Delivery App Service Suite]" parallel="classes" data-provider-thread-count="1">
+  <parameter name="seleniumport" value="4444"/>
+  <parameter name="executionTimeout" value="180000"/>
+  <parameter name="autoScreenShot" value="true"/>
+  <parameter name="browser" value="*firefox"/>
+  <parameter name="seleniumhost" value="localhost"/>
+  <parameter name="runLocally" value="true"/>
+  <test name="Grocert Complete Set Of DeliveryApp Service(failed)" parallel="classes">
+    <classes>
+      <class name="com.ril.deliveryApp.ws.Testing">
+        <methods>
+          <include name="setUp"/>
+          <include name="testCreateNewUser"/>
+        </methods>
+      </class> <!-- com.ril.deliveryApp.ws.Testing -->
+    </classes>
+  </test> <!-- Grocert Complete Set Of DeliveryApp Service(failed) -->
+</suite> <!-- Failed suite [Grocery Delivery App Service Suite] -->
