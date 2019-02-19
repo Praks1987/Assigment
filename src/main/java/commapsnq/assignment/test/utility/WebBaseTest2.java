@@ -82,14 +82,15 @@ public class WebBaseTest2 {
 		else if (browser.equalsIgnoreCase("HeadLessUnitTest"))
 
 		{
-		    DesiredCapabilities caps = new DesiredCapabilities().htmlUnit();
-		    driver = new HtmlUnitDriver();
-			Thread.sleep(5000);
-			driver.get(url);
-			System.out.println("end");
-			Thread.sleep(5000);
-			driver.manage().window().maximize();
-			extentTest.log(LogStatus.INFO, "Headeless browser Launched successfully -");
+		   
+		    DesiredCapabilities caps = new DesiredCapabilities().phantomjs();
+		    System.setProperty("phantomjs.binary.path", System.getProperty("user.dir")+ "\\src\\test\\resources\\BrowserDrivers\\phantomjs.exe");
+		    driver = new PhantomJSDriver();
+		    Thread.sleep(5000);
+		    driver.get(url);
+		    Thread.sleep(5000);
+		    driver.manage().window().maximize();
+		    extentTest.log(LogStatus.INFO, "Headless browser Launched successfully -");
 			
 		}
 	
