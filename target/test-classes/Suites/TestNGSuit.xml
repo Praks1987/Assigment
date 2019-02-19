@@ -8,8 +8,8 @@
     <test name="ChromeTest">
 		<parameter name="browser" value="Chrome" />
 		<classes>
-		   <class name="com.mapsnq.assignment.SearchModule"/> 
-		   <class name="com.mapsnq.assignment.DirectionModule"/>
+		    <class name="com.mapsnq.assignment.SearchModule"/> 
+		   <class name="com.mapsnq.assignment.DirectionModule"/> 
 		   <class name="com.mapsnq.assignment.LiveTrafficeModule"/>
 		</classes>
 	</test>
@@ -21,7 +21,7 @@
 		   <class name="com.mapsnq.assignment.DirectionModule"/>
 		   <class name="com.mapsnq.assignment.LiveTrafficeModule"/>
 		</classes>
-	</test>
+	</test> 
     
 	<!-- <test name="EdgeTest">
             <parameter name="browser" value="IE" />

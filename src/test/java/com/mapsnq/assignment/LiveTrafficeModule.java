@@ -24,7 +24,7 @@ public class LiveTrafficeModule  extends WebBaseTest2{
 				"Execution Start :: Test to check user Navigate to Live Incident ");
 		LiveModulePage liveModulePage = new LiveModulePage();
 		liveModulePage.navigateToLiveIncident();
-		LiveIncidentValidation.validateLiveIncidentPage("Singapore Live Traffic News");
+		LiveIncidentValidation.validateLiveIncidentPage();
 		extentTest.log(LogStatus.INFO, 
 					"Execution End :: Test to check user Navigate to Live Incident");
 	}
@@ -49,7 +49,7 @@ public class LiveTrafficeModule  extends WebBaseTest2{
 				"Execution Start :: Test to check user navigates to Live Camera Tab ");
 		LiveModulePage liveModulePage = new LiveModulePage();
 		liveModulePage.navigateToLiveCameras();
-		LiveCamerasValidation.validateLiveCamerasPage("Singapore Live Traffic Cameras");
+		LiveCamerasValidation.validateLiveCamerasPage();
 		extentTest.log(LogStatus.INFO, 
 					"Execution End :: Test to check user can see list of Live Incident ");
 	}
@@ -74,7 +74,7 @@ public class LiveTrafficeModule  extends WebBaseTest2{
 				"Execution Start :: Test to check user List of Live Camera ");
 		LiveModulePage liveModulePage = new LiveModulePage();
 		liveModulePage.navigateToLiveToll();
-		LiveTollValidation.validateLiveTollPage("Singapore");
+		LiveTollValidation.validateLiveTollPage();
 		extentTest.log(LogStatus.INFO, 
 					"Execution End :: Test to check user List of Live Camera");
 	}

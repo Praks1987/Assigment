@@ -15,9 +15,4 @@ public class EnvProperties {
 	public static String dbPort = CustomProperties.getConfigProperty("dbPort");
 	public static String dbServiceName = CustomProperties.getConfigProperty("dbServiceName");
 
-	
-
-
-	
-
 }
