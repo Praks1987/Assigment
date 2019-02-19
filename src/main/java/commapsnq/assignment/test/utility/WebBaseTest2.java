@@ -78,6 +78,20 @@ public class WebBaseTest2 {
 		 driver.manage().window().maximize(); 
 		 extentTest.log(LogStatus.INFO, "FireFox browser  Launched successfully - ");
 		 }
+		
+		else if (browser.equalsIgnoreCase("HeadLessUnitTest"))
+
+		{
+		    DesiredCapabilities caps = new DesiredCapabilities().htmlUnit();
+		    driver = new HtmlUnitDriver();
+			Thread.sleep(5000);
+			driver.get(url);
+			System.out.println("end");
+			Thread.sleep(5000);
+			driver.manage().window().maximize();
+			extentTest.log(LogStatus.INFO, "Headeless browser Launched successfully -");
+			
+		}
 	
 	  /*	
 		  else if (browser.equalsIgnoreCase("IE")) { DesiredCapabilities cap =
