@@ -8,20 +8,29 @@
     <test name="ChromeTest">
 		<parameter name="browser" value="Chrome" />
 		<classes>
-		    <class name="com.mapsnq.assignment.SearchModule"/> 
-		   <class name="com.mapsnq.assignment.DirectionModule"/> 
 		   <class name="com.mapsnq.assignment.LiveTrafficeModule"/>
+		   <class name="com.mapsnq.assignment.DirectionModule"/>
+		   <class name="com.mapsnq.assignment.SearchModule"/>
 		</classes>
 	</test>
  
 	<test name="FirefoxTest">
 	    <parameter name="browser" value="Firefox" />
 		<classes>
-		   <class name="com.mapsnq.assignment.SearchModule"/> 
-		   <class name="com.mapsnq.assignment.DirectionModule"/>
 		   <class name="com.mapsnq.assignment.LiveTrafficeModule"/>
+		   <class name="com.mapsnq.assignment.DirectionModule"/>
+		   <class name="com.mapsnq.assignment.SearchModule"/>  
 		</classes>
 	</test> 
+	
+	<test name="HeadLessUnitTest">
+		<parameter name="browser" value="HeadLessUnitTest" />
+		<classes>
+		   <class name="com.mapsnq.assignment.LiveTrafficeModule"/>
+		   <class name="com.mapsnq.assignment.DirectionModule"/>
+		   <class name="com.mapsnq.assignment.SearchModule"/>
+		</classes>
+	</test>
     
 	<!-- <test name="EdgeTest">
             <parameter name="browser" value="IE" />
